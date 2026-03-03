@@ -1,0 +1,27 @@
+/* Board Styles */
+.board-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+    padding: 20px 28px 16px;
+    min-height: 0;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 12px;
+    width: min(90vw, 880px);
+    height: min(calc(100dvh - 210px), 400px);
+}
+
+@media (max-width: 600px) {
+    .board {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        width: 94vw;
+        height: min(calc(100dvh - 200px), 520px);
+    }
+}

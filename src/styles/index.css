@@ -1,0 +1,86 @@
+/* ===================================================
+   MEMORY GARDEN – Design System
+   Fonts: Libre Baskerville (titles) · Albert Sans (body)
+   =================================================== */
+
+/* 1. CSS Variables */
+:root {
+  --bg: #f0ece4;
+  --bg-card: #faf7f2;
+  --bg-header: #ede8df;
+  --accent: #8b6f5e;
+  --accent-light: #c4a08e;
+  --accent-dark: #5c4437;
+  --matched: #7a9e7e;
+  --matched-glow: rgba(122, 158, 126, 0.35);
+  --text: #3a2e27;
+  --text-muted: #8a7a72;
+  --border: rgba(139, 111, 94, 0.18);
+  --shadow-sm: 0 2px 8px rgba(90, 60, 40, 0.08);
+  --shadow-md: 0 6px 24px rgba(90, 60, 40, 0.14);
+  --shadow-lg: 0 16px 48px rgba(90, 60, 40, 0.18);
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --transition: 0.2s ease;
+
+  /* Fonts */
+  --font-title: 'Libre Baskerville', Georgia, serif;
+  --font-body: 'Albert Sans', system-ui, sans-serif;
+}
+
+/* 2. Global Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg);
+  color: var(--text);
+  height: 100dvh;
+  overflow: hidden;
+  background-image:
+    radial-gradient(circle at 15% 25%, rgba(196, 160, 142, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 85% 75%, rgba(122, 158, 126, 0.10) 0%, transparent 45%);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+/* 3. Typography helpers */
+.font-title {
+  font-family: var(--font-title);
+  font-style: italic;
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+/* 4. Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-light);
+  border-radius: 3px;
+}
