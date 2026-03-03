@@ -14,10 +14,7 @@ export default function Card({ card, isFlipped, isMatched, onClick }) {
                 className={`card-inner${isFlipped || isMatched ? ' card-inner--flipped' : ''}`}
             >
                 {/* Back face */}
-                <div className="card-face card-face--back">
-                    <div className="card-back-accent" />
-                    <div className="card-back-pattern" />
-                </div>
+                <div className="card-face card-face--back" />
 
                 {/* Front face */}
                 <div className="card-face card-face--front">

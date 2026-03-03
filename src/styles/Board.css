@@ -14,8 +14,9 @@
     grid-template-rows: repeat(3, 1fr);
     gap: 12px;
     width: min(90vw, 880px);
-    height: min(calc(100dvh - 210px), 400px);
+    height: min(calc(100dvh - 240px), 300px);
 }
+
 
 @media (max-width: 600px) {
     .board {

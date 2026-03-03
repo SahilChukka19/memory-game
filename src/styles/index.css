@@ -5,9 +5,9 @@
 
 /* 1. CSS Variables */
 :root {
-  --bg: #f0ece4;
+  --bg: #fafafa;
   --bg-card: #faf7f2;
-  --bg-header: #ede8df;
+  --bg-header: #fafafa;
   --accent: #8b6f5e;
   --accent-light: #c4a08e;
   --accent-dark: #5c4437;
